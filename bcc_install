@@ -1,0 +1,7 @@
+git clone https://github.com/iovisor/bcc.git
+mkdir bcc/build; cd bcc/build
+cmake .. -DPYTHON_CMD=python3.
+make
+sudo make install
+pushd src/python/
+popd
