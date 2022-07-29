@@ -48,3 +48,4 @@ CMD mount -t debugfs debugfs /sys/kernel/debug && /bin/bash
 
 ----------------------
 $ docker build -t ebpf-for-mac -f ./Dockerfile.tools .
+$ sudo docker run -it --rm   --name ebpf-for-mac   --privileged   -v /lib/modules:/lib/modules:ro   -v /etc/localtime:/etc/localtime:ro   --pid=host   ebpf-for-mac
